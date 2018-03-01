@@ -1,2 +1,4 @@
 # afioritto.github.io
-Learning GitHub is fun. \n Amanda Test
+Learning GitHub is fun.
+
+Amanda Test
