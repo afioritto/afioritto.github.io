@@ -2,10 +2,10 @@
 title:              "Amanda Fioritto"
 description:        #"A minimalist Jekyll theme"
 author_name:        "Amanda Fioritto" # change this to your name
-logo_url:           https://avatars.githubusercontent.com/u/33674054?v=4 # Get it from GitHub API: https://api.github.com/users/<username>
+logo_url:           http://avatars.githubusercontent.com/u/33674054?v=4 # Get it from GitHub API: https://api.github.com/users/<username>
 
 # Site Settings
-url:                https://afioritto.github.io # main url
+url:                http://afioritto.github.io # main url
 baseurl:            /afioritto
 permalink:          /:title # Post permalink
 timezone:           America/Los Angeles 
