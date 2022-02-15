@@ -1,31 +1,45 @@
----
-layout: default
----
+<html>
+  
+<head>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
+</head>
 
-<section>
+<body>
+  <img src="http://avatars.githubusercontent.com/u/33674054?v=4" />
+  <h1>hi, i'm amanda.</h1>
+  <p>here's some information about me</p>  
+</body>
 
-	{% for post in site.posts %}
-		{% unless post.next %}
-			<h3 class="code">{{ post.date | date: '%Y' }}</h3>
-		{% else %}
-			{% capture year %}{{ post.date | date: '%Y' }}{% endcapture %}
-			{% capture nyear %}{{ post.next.date | date: '%Y' }}{% endcapture %}
-			{% if year != nyear %}
-				<h3 class="code">{{ post.date | date: '%Y' }}</h3>
-			{% endif %}
-		{% endunless %}
+<style>
+	body {
+	padding-top: 80px;
+	padding-right: 30px;
+	padding-bottom: 80px;
+	padding-left: 100px;
+	background-color: #FAF3EC;
+	}
 
-		<ul>
-			<li>
-				<div class="post-date code">
-					<span>{{ post.date | date: "%b %d" }}</span>
-				</div>
-				<div class="title">
-					<a href="{{ post.url | prepend: site.baseurl | prepend: site.url }}">{{ post.title }}</a>
-				</div>
-			</li>
-		</ul>
+	h1 {
+	font-family: Open Sans;
+	font-size: 40px;
+	color: #E7987E;
+	padding-left: 10px;
+	}
 
-	{% endfor %}
+	p {
+	font-family: Open Sans;
+	font-size: 16px;
+	/*   color: #33180B; */
+	padding-left: 10px;
+	}
 
-</section>
+	img {
+	border-radius: 50%;
+	height: 300px;
+	width: 300px;
+	}
+</style>
+
+
+  
+</html>
